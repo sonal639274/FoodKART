@@ -1,0 +1,107 @@
+.main-header{
+    height: 100%;
+    margin: 30px auto;
+    /* background: url('../../../src/assets/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative; */
+}
+.header-img{
+    border-radius: 20px;
+    width: 100%;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    right: 6vw;
+    animation: fadeIn 3s ;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    font-style: 1vw;
+}
+.header-contents button{
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 23px;
+    background-color:#fac658;
+    font-style: max(1vw, 13px);
+    border-radius: 50px;
+    font-size: 17px;
+}
+@media (max-width:1124px){
+   
+    .header-contents{
+        max-width: 45%;
+    }
+    .header-contents h2{
+        font-size: 40px;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:1010px){
+    .header-contents{
+        max-width:65%;
+    }
+    .header-contents h2{
+        font-size: 40px;
+    }
+    .header-contents p{
+        font-size: 15px;
+    }
+    .header-contents button{
+       padding: 2vw 4vw; 
+    }
+}
+@media (max-width:860px){
+    .header-contents{
+        max-width:65%;
+    }
+    .header-contents h2{
+        font-size: 30px;
+    }
+    .header-contents p{
+        font-size: 10px;
+    }
+    .header-contents button{
+       padding: 2vw 4vw; 
+    }
+}
+@media (max-width:640px){
+    
+    .header-contents h2{
+        font-size: 25px;
+    }
+    .header-contents button{
+        padding: 1vw 2vw; 
+        font-size: 10px;
+     }
+     .header-contents p{
+        display: none;
+     }
+}
+@media (max-width:425px){
+    
+    .header-contents h2{
+        font-size: 15px;
+    }
+    .header-contents button{
+        padding: 1vw 2vw; 
+        font-size: 10px;
+     }
+     .header-contents p{
+        display: none;
+     }
+}

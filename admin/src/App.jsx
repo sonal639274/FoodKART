@@ -10,7 +10,7 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
-  const url = 'http://localhost:4000'
+  const url = 'https://foodkart-backend-gp28.onrender.com'
   useEffect(()=>{
     if(location.pathname === "/"){
     navigate("/add")
